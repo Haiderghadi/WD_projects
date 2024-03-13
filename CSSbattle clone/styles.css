@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #fff;
+  color: #999;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+p {
+  margin: 0.5rem 0;
+}
+img {
+  width: 100%;
+}
+
+header,
+.right-section,
+.online,
+.profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header {
+  background-color: #0f1117;
+  height: 60px;
+}
+.logo {
+  width: 40px;
+  margin-left: 10px;
+}
+.streak {
+  background-color: rgb(56, 56, 56);
+  width: 100px;
+  height: 80px;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 0 0 50px 50px;
+  margin-left: 15%;
+}
+.streak > h2 {
+  margin-top: 10px;
+  margin-bottom: -10px;
+  color: #fff;
+}
+.streak > p {
+  font: 18px rgb(128, 128, 128);
+}
+.right-section {
+  margin-right: 20px;
+}
+.online > .dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: yellow;
+}
+.online > h4 {
+  color: #fff;
+}
+.online > .dot,
+h4,
+p {
+  margin-right: 5px;
+}
+.right-section > button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: rgb(95, 104, 105);
+}
+.right-section > button > img {
+  width: 30px;
+  margin: auto;
+}
+.profile {
+  background-color: rgb(95, 104, 105);
+  width: 120px;
+  height: 40px;
+  border-radius: 20px;
+  flex-direction: row;
+  justify-content: center;
+}
+.profile-pic {
+  width: 30px;
+  margin-right: 5px;
+}
+.profile > p {
+  font-size: 15px;
+  font-weight: 900;
+  color: #fff;
+}
+.sort {
+  width: 10px;
+  margin-left: 2px;
+}
+nav {
+  width: 80px;
+  height: 100dvh;
+  color: #777777;
+  background-color: #222222;
+}

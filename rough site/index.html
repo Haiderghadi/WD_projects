@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      transition: background-color 0.5s;
+    }
+
+    .content,
+    .content2 {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  </style>
+  <title>Change Background on Scroll</title>
+</head>
+
+<body>
+  <div class="content">
+    <h1>Scroll down to change the background</h1>
+  </div>
+  <div class="content2">
+    <h1>Scroll down to change the background</h1>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      window.addEventListener('scroll', function () {
+        const body = document.body;
+        const scrollPosition = window.scrollY;
+
+        // Adjust the background color change point as needed
+        if (scrollPosition > 100) {
+          body.style.backgroundColor = 'lightblue';
+        } else {
+          body.style.backgroundColor = 'white';
+        }
+      });
+    });
+
+  </script>
+</body>
+
+</html>
